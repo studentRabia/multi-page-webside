@@ -1,0 +1,64 @@
+.footermain {
+    width: 100%;
+    background-color: #0e0505;
+    padding: 20px 0;
+}
+
+.socialicon {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.socialicon a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s;
+}
+
+.socialicon a i {
+    font-size: 1.5rem;
+    color: black;
+    opacity: 0.6;
+}
+
+.socialicon a:hover {
+    background-color: #2183a2;
+    color: white;
+}
+
+.footer {
+    background-color: #0e0505;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+span.designer {
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 750px) {
+    .socialicon a {
+        width: 35px;
+        height: 35px;
+    }
+    .footer {
+        font-size: 0.5rem;
+        padding: 8px;
+    }
+}

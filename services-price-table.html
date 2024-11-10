@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servives</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="nav.css">
+   <style>
+    * {
+    box-sizing: border-box;
+}
+
+.colum {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 black;
+}
+
+.price .header {
+    background-color: black;
+    color: aliceblue;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.price li {
+    border-bottom: 1px solid rgb(184, 161, 161);
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: rgb(182, 245, 245);
+    font-size: 20px;
+}
+
+.btn {
+    background-color: rgb(4, 63, 63);
+    color: black;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+button {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(182, 245, 245);
+    background-color: rgb(4, 63, 63);
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .colum {
+        width: 50%; /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 750px) {
+    .colum {
+        width: 100%; /* Single column on small screens */
+    }
+}
+
+   </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="login-form.html">Trend</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services-price-table.html">Services</a></li>
+                    <li><a href="#">Categories</a>
+                        <ul class="dropdown">
+                            <li id="inner"><a href="services-price-table.html">Discount</a></li>
+                            <li id="inner"><a href="#">Accessories</a></li>
+                            <li id="inner"><a href="#">Cloth</a></li>
+                            <li id="inner"><a href="#">Bags</a></li>
+                            <li id="inner"><a href="#">Footwear</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="Search">
+            </div>
+        </div>
+    </header>
+    <br><br>
+  <center>  <h2>Here are Discounts listed</h2></center>
+  <div>
+    <div class="colum">
+        <ul class="price">
+        <li class="header" style="background-color: rgb(19, 105, 105);">Basic</li>
+        <li class="grey">$9.99% Discount</li>
+        <li>10000 In Store</li>
+        <li>10 color available</li>
+        <li>10 Day Limited Offeer</li>
+        <li class="grey"><a href="#" class="btn" >Singup</a></li>
+    </ul>
+    </div>
+    <div class="colum">
+        <ul class="price">
+        <li class="header" style="background-color: rgb(19, 105, 105);">Premium</li>
+        <li class="grey">$15.99% Discount</li>
+        <li>1000 In Store</li>
+
+        <li>12 color available</li>
+        <li>20 Day Limited Offeer</li>
+        <li class="grey"><a href="#" class="btn" >Singup</a></li>
+    </ul>
+    </div>
+    <div class="colum">
+        <ul class="price">
+        <li class="header" style="background-color: rgb(19, 105, 105);">After End of Offer Discount</li>
+        <li class="grey">$25.99% Discount</li>
+        <li>500 In Store</li>
+        <li>5 color available</li>   
+        <li>8 Day Limited Offeer</li>
+        <li class="grey"><a href="#" class="btn">Singup</a></li>
+    </ul>
+    </div>
+</div>
+
+
+   
+
+</body>
+</html>

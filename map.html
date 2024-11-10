@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Map</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .main {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(202, 212, 212);
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-top: 25px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        /* Responsive iframe for map */
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 450px;
+            border: 0;
+        }
+        
+        /* Responsive logo image */
+        .main img {
+            width: 100%;
+            max-width: 80px;
+            height: auto;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+            iframe {
+                height: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+            iframe {
+                height: 250px;
+            }
+            .main img {
+                max-width: 120px;
+            }
+        }
+        </style>
+        </head>
+        
+        <body>
+            <div class="main">
+                <h1>Embed Location MAP</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14466.136769377172!2d67.0652637!3d24.9819581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20Education%20North%20Karachi%20Center!5e0!3m2!1sen!2s!4v1704695986796!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br>
+                <a href="/index.html">
+                    <img src="/images/mart logo.jpg" alt="Mart Logo">
+                </a>
+            </div>
+        </body>
+        </html>
+        
